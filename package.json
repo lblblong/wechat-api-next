@@ -1,0 +1,49 @@
+{
+  "name": "wechat-api-next",
+  "version": "3.0.0",
+  "author": "lblblong <1162275271@qq.com>",
+  "description": "",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "serve": "tsc -w",
+    "build": "npm run clean && npm run prod",
+    "prod": "tsc",
+    "clean": "rimraf dist",
+    "test": "mocha -r ts-node/register",
+    "doc:serve": "dumi dev",
+    "doc:build": "dumi build",
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "lbl-request": "^1.0.3"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/prompt-cli": "^12.1.4",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.14.35",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0",
+    "dayjs": "^1.10.4",
+    "dumi": "^1.1.16",
+    "husky": "^6.0.0",
+    "mocha": "^7.1.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
