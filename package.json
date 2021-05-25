@@ -1,8 +1,9 @@
 {
   "name": "wechat-api-next",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "lblblong <1162275271@qq.com>",
-  "description": "",
+  "homepage": "https://github.com/lblblong/wechat-api-next",
+  "description": "wechat-api-next 是一个类型提示友好，响应友好的微信服务端 API Node.js 封装。",
   "license": "ISC",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
