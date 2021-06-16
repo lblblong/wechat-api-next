@@ -12,6 +12,7 @@ specifiers:
   dumi: ^1.1.16
   husky: ^6.0.0
   lbl-request: ^1.0.3
+  regenerator-runtime: ^0.13.7
   size-limit: ^4.11.0
   ts-node: ^10.0.0
   tsdx: ^0.14.1
@@ -32,6 +33,7 @@ devDependencies:
   cz-customizable: 6.3.0
   dumi: 1.1.19_typescript@4.3.2
   husky: 6.0.0
+  regenerator-runtime: 0.13.7
   size-limit: 4.12.0
   ts-node: 10.0.0_d85b7772979915fe9cd1f91cbe4a0244
   tsdx: 0.14.1_@types+node@14.17.3
