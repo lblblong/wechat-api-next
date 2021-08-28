@@ -7,7 +7,7 @@ group:
 
 # qrcode.createQRCode
 
-[查看微信原文档](https://developers.weixin.qq.com/doc/offiaccount/Account_Management/Generating_a_Parametric_QR_Code.html)
+[查看微信官方文档](https://developers.weixin.qq.com/doc/offiaccount/Account_Management/Generating_a_Parametric_QR_Code.html)
 
 生成带参数的二维码
 

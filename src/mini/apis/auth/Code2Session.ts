@@ -19,7 +19,10 @@ export class Code2Session {
    * 登录凭证校验。通过 [wx.login](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html) 接口获得临时登录凭证 code 后传到开发者服务器调用此接口完成登录流程。更多使用方法详见 [小程序登录](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html)。
    * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/login/auth.code2Session.html
    */
-  async code2Session(options: { js_code: string }) {
+  async code2Session(options: {
+    /** 登录时获取的 code */
+    js_code: string
+  }) {
     try {
       const res = await this.root.request.get('sns/jscode2session', {
         ...options,

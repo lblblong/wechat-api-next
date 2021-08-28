@@ -7,7 +7,7 @@ group:
 
 # auth.getAccessToken
 
-[查看微信原文档](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html#1)
+[查看微信官方文档](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html#1)
 
 通过用户 Code 获取网页授权 access_token
 

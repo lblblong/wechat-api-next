@@ -7,7 +7,7 @@ group:
 
 # subscribeMessage.send
 
-[查看微信原文档](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html)
+[查看微信官方文档](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html)
 
 发送订阅消息
 

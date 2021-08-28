@@ -7,7 +7,7 @@ group:
 
 # template.sendTemplate
 
-[查看微信原文档](https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Template_Message_Interface.html#5)
+[查看微信官方文档](https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Template_Message_Interface.html#5)
 
 发送模板消息
 

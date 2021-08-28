@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "dayjs": "^1.10.4",
+    "dumi-theme-default": "^1.1.8",
     "lbl-request": "^1.0.7"
   },
   "files": [

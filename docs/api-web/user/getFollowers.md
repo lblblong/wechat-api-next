@@ -7,7 +7,7 @@ group:
 
 # user.getFollowers
 
-[查看微信原文档](https://developers.weixin.qq.com/doc/offiaccount/User_Management/Getting_a_User_List.html)
+[查看微信官方文档](https://developers.weixin.qq.com/doc/offiaccount/User_Management/Getting_a_User_List.html)
 
 获取关注者列表
 

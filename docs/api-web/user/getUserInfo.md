@@ -6,7 +6,7 @@ group:
 
 # user.getUserInfo
 
-[查看微信原文档](https://developers.weixin.qq.com/doc/offiaccount/User_Management/Get_users_basic_information_UnionID.html)
+[查看微信官方文档](https://developers.weixin.qq.com/doc/offiaccount/User_Management/Get_users_basic_information_UnionID.html)
 
 获取用户基本信息
 

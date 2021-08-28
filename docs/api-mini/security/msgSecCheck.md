@@ -7,7 +7,7 @@ group:
 
 # security.msgSecCheck
 
-[查看微信原文档](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/sec-check/security.msgSecCheck.html)
+[查看微信官方文档](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/sec-check/security.msgSecCheck.html)
 
 检查一段文本是否含有违法违规内容。
 
