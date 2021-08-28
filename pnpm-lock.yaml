@@ -11,7 +11,7 @@ specifiers:
   dayjs: ^1.10.4
   dumi: ^1.1.16
   husky: ^6.0.0
-  lbl-request: ^1.0.3
+  lbl-request: ^1.0.7
   regenerator-runtime: ^0.13.7
   size-limit: ^4.11.0
   ts-node: ^10.0.0
@@ -21,7 +21,7 @@ specifiers:
 
 dependencies:
   dayjs: 1.10.5
-  lbl-request: 1.0.3
+  lbl-request: 1.0.7
 
 devDependencies:
   '@commitlint/cli': 12.1.4
@@ -2830,11 +2830,12 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/0.19.2:
-    resolution: {integrity: sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==}
-    deprecated: Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410
+  /axios/0.21.1:
+    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
     dependencies:
-      follow-redirects: 1.5.10
+      follow-redirects: 1.14.2
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /axobject-query/2.2.0:
@@ -4199,12 +4200,6 @@ packages:
       ms: 2.0.0
     dev: true
 
-  /debug/3.1.0:
-    resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
-    dependencies:
-      ms: 2.0.0
-    dev: false
-
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     dependencies:
@@ -5322,11 +5317,14 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.5.10:
-    resolution: {integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==}
+  /follow-redirects/1.14.2:
+    resolution: {integrity: sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==}
     engines: {node: '>=4.0'}
-    dependencies:
-      debug: 3.1.0
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: false
 
   /for-in/1.0.2:
@@ -7294,11 +7292,13 @@ packages:
       webpack-sources: 1.4.3
     dev: true
 
-  /lbl-request/1.0.3:
-    resolution: {integrity: sha512-g5lR+t3uWfn2xQchvfN8/t9O8nxlNU+crkVjEtlds960c4pgn7/u7svDYonle+iVD/fAfZpq6UUlXWqFeZLMsQ==}
+  /lbl-request/1.0.7:
+    resolution: {integrity: sha512-0+spzokn07nxWoPAf7d58wOkGJhSfCKu6uwdfj1EGpZQl5462vh4e1DLV7j0MWja+syTh/uSNhlwbpcXLwk1hw==}
     dependencies:
-      axios: 0.19.2
+      axios: 0.21.1
       json-to-ts: 1.7.0
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /leven/3.1.0:
@@ -7982,6 +7982,7 @@ packages:
 
   /ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
+    dev: true
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}

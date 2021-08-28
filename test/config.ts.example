@@ -1,0 +1,10 @@
+export const miniConfig = {
+  appid: 'your appid',
+  appsecret: 'your appsecret'
+}
+
+export const webConfig = {
+  appid: 'your appid',
+  appsecret: 'your appsecret'
+  openids: ['your openid']
+}
