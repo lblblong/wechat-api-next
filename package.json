@@ -1,6 +1,6 @@
 {
   "name": "wechat-api-next",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "author": "lblblong <1162275271@qq.com>",
   "homepage": "https://github.com/lblblong/wechat-api-next",
   "description": "wechat-api-next 是一个类型提示友好，响应友好的微信服务端 API Node.js 封装。",
@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "dayjs": "^1.10.4",
-    "dumi-theme-default": "^1.1.8",
     "lbl-request": "^1.0.7"
   },
   "files": [
@@ -47,6 +46,7 @@
     "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
     "dumi": "^1.1.16",
+    "dumi-theme-default": "^1.1.8",
     "husky": "^6.0.0",
     "regenerator-runtime": "^0.13.7",
     "size-limit": "^4.11.0",
