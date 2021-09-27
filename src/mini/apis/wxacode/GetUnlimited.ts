@@ -5,6 +5,9 @@ export interface GetUnlimited extends BaseMiniAPI {}
 export class GetUnlimited {
   /**
    * 获取小程序码，适用于需要的码数量极多的业务场景。通过该接口生成的小程序码，永久有效，数量暂无限制。
+   * 
+   * 需要注意的是，该方法需要在小程序发布了正式版才可正常调用，否则会获得报错：41030 invalid page rid
+   * 
    * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html
    */
   async getUnlimited(options: {
