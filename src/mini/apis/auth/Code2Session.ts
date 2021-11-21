@@ -30,7 +30,7 @@ export class Code2Session {
         secret: this.root.appsecret,
         grant_type: 'authorization_code',
       })
-      return res.hasSuccess<Code2SessionResult>()
+      return res.isSuccess<Code2SessionResult>()
     } catch (err) {
       console.log('请求失败', err)
       throw err

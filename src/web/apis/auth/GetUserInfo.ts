@@ -48,6 +48,6 @@ export class GetUserInfo {
 
     if (res.data.errcode) throw Error(res.data.errcode + '：' + res.data.errmsg)
 
-    return res.hasSuccess<GetUserInfoResult>()
+    return res.isSuccess<GetUserInfoResult>()
   }
 }

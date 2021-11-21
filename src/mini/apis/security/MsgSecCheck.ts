@@ -32,6 +32,6 @@ export class MsgSexCheck {
       ...options,
     })
 
-    return res.hasSuccess<MsgSexCheckResult>()
+    return res.isSuccess<MsgSexCheckResult>()
   }
 }

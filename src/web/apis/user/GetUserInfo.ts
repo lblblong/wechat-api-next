@@ -57,6 +57,6 @@ export class GetUserInfo {
       access_token: token,
     })
 
-    return res.hasSuccess<WechatUserInfo>()
+    return res.isSuccess<WechatUserInfo>()
   }
 }

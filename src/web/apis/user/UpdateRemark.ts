@@ -29,6 +29,6 @@ export class UpdateRemark {
       ...options,
     })
 
-    return res.hasSuccess<UpdateRemarkResult>()
+    return res.isSuccess<UpdateRemarkResult>()
   }
 }

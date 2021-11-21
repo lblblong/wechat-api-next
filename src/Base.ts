@@ -1,4 +1,4 @@
-import { Request } from 'lbl-request'
+import { Request } from '@libeilong/request'
 import { TokenHandler } from './apis/TokenHandler'
 import { ApiError } from './Error'
 import { applyMixins, buffer2Text } from './utils'
@@ -14,7 +14,7 @@ export class WechatBase {
 
     if (options.endpoint) {
       this.endpoint = options.endpoint
-      this.request.setBaseUrl(`https://${this.endpoint}`)
+      this.request.getInstance().defaults.baseURL = `https://${this.endpoint}`
     }
   }
 
@@ -25,16 +25,13 @@ export class WechatBase {
 
   request = new Request({
     baseURL: `https://${this.endpoint}`,
-    mixinHeader: config=>{
-      return config
-    },
-    successCondition: result => {
+    successCondition: (result) => {
       return result.code === 0
     },
-    onError: res => {
+    onError: (res) => {
       throw new ApiError(res.message, res.code)
     },
-    responseFormat: (result, response) => {
+    onResponse: (result, response) => {
       let data = response.data
 
       // 处理图片
@@ -54,9 +51,7 @@ export class WechatBase {
         result.message = data.errmsg
         result.data = data
       }
-
-      return result
-    }
+    },
   })
 
   setEndpoint = (endpoint: string) => {

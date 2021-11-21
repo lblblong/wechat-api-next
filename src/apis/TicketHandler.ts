@@ -13,7 +13,7 @@ export class TicketHandler {
       type: 'jsapi',
     })
 
-    const { ticket } = res.hasSuccess()
+    const { ticket } = res.isSuccess()
 
     await this.setTicket(ticket)
     return ticket

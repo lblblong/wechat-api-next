@@ -30,6 +30,6 @@ export class GetAccessToken {
 
     if (res.data.errcode) throw Error(res.data.errcode + '：' + res.data.errmsg)
 
-    return res.hasSuccess<GetAccessTokenResult>()
+    return res.isSuccess<GetAccessTokenResult>()
   }
 }

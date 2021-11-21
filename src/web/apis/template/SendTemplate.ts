@@ -45,6 +45,6 @@ export class SendTemplate {
       ...options,
     })
 
-    return res.hasSuccess<SendTemplateResult>()
+    return res.isSuccess<SendTemplateResult>()
   }
 }

@@ -38,6 +38,6 @@ export class Send {
       ...options,
     })
 
-    return res.hasSuccess<SubscribeMessageSendResult>()
+    return res.isSuccess<SubscribeMessageSendResult>()
   }
 }

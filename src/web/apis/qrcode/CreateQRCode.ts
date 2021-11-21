@@ -45,7 +45,7 @@ export class CreateQRCode {
       ...{ expire_seconds: options.expire_seconds },
     })
 
-    const data = res.hasSuccess()
+    const data = res.isSuccess()
 
     return {
       ...data,

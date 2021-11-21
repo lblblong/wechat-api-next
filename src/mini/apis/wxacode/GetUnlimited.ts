@@ -35,6 +35,6 @@ export class GetUnlimited {
       }
     )
 
-    return res.hasSuccess<Buffer>()
+    return res.isSuccess<Buffer>()
   }
 }

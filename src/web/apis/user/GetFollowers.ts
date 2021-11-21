@@ -31,6 +31,6 @@ export class GetFollowers {
       access_token: token,
     })
 
-    return res.hasSuccess<GetFollowersResult>()
+    return res.isSuccess<GetFollowersResult>()
   }
 }
