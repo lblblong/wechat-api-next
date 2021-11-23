@@ -1,6 +1,6 @@
 {
   "name": "wechat-api-next",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "author": "lblblong <1162275271@qq.com>",
   "homepage": "https://github.com/lblblong/wechat-api-next",
   "description": "wechat-api-next 是一个类型提示友好，响应友好的微信服务端 API Node.js 封装。",
@@ -9,19 +9,17 @@
   "types": "dist/index.d.ts",
   "module": "dist/wechat-api-next.esm.js",
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsdx watch --target node",
+    "build": "tsdx build --target node",
     "test": "tsdx test",
     "lint": "tsdx lint",
+    "prepare": "tsdx build --target node",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "doc:serve": "dumi dev",
-    "doc:build": "dumi build",
-    "commit": "git-cz"
+    "analyze": "size-limit --why"
   },
   "dependencies": {
-    "@libeilong/request": "^0.2.0",
-    "dayjs": "^1.10.4"
+    "@libeilong/request": "^0.3.1",
+    "dayjs": "^1.10.7"
   },
   "files": [
     "dist",

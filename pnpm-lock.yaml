@@ -4,12 +4,12 @@ specifiers:
   '@commitlint/cli': ^12.1.4
   '@commitlint/config-conventional': ^12.1.4
   '@commitlint/prompt-cli': ^12.1.4
-  '@libeilong/request': ^0.2.0
+  '@libeilong/request': ^0.3.1
   '@size-limit/preset-small-lib': ^4.11.0
   '@types/node': ^14.14.35
   commitizen: ^4.2.4
   cz-customizable: ^6.3.0
-  dayjs: ^1.10.4
+  dayjs: ^1.10.7
   dumi: ^1.1.16
   dumi-theme-default: ^1.1.8
   husky: ^6.0.0
@@ -21,8 +21,8 @@ specifiers:
   typescript: ^4.3.2
 
 dependencies:
-  '@libeilong/request': 0.2.0
-  dayjs: 1.10.5
+  '@libeilong/request': 0.3.1
+  dayjs: 1.10.7
 
 devDependencies:
   '@commitlint/cli': 12.1.4
@@ -1580,8 +1580,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /@libeilong/request/0.2.0:
-    resolution: {integrity: sha512-7DZfkO1ukcOGd2o16tX49TBRxnhIk0oHdlkZ0SSMUEn5A6eure0PDQ0GaQk7TqwklfiY+6UYukRaYHBsgpDa8w==}
+  /@libeilong/request/0.3.1:
+    resolution: {integrity: sha512-mAJ4fM7H1vhtXCYU4WnTzjAvDrIODqQbmMl8ep5r9S/pGfSLK58KPdyEuwZjGGnT+pDuiF4Jqtr7CS9lT/pThg==}
     engines: {node: '>=10'}
     dependencies:
       '@libeilong/func': 0.1.1
@@ -3095,6 +3095,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -3597,6 +3598,7 @@ packages:
 
   /clipboard/2.0.8:
     resolution: {integrity: sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==}
+    requiresBuild: true
     dependencies:
       good-listener: 1.2.2
       select: 1.1.2
@@ -4210,8 +4212,8 @@ packages:
       whatwg-url: 8.6.0
     dev: true
 
-  /dayjs/1.10.5:
-    resolution: {integrity: sha512-BUFis41ikLz+65iH6LHQCDm4YPMj5r1YFLdupPIyM4SGcXMmtiLQ7U37i+hGS8urIuqe7I/ou3IS1jVc4nbN4g==}
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
     dev: false
 
   /debug/2.6.9:
@@ -5224,6 +5226,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -5452,6 +5455,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8028,6 +8032,7 @@ packages:
 
   /nan/2.14.2:
     resolution: {integrity: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8117,6 +8122,7 @@ packages:
 
   /node-notifier/6.0.0:
     resolution: {integrity: sha512-SVfQ/wMw+DesunOm5cKqr6yDcvUTDl/yc97ybGHMrteNEY6oekXpNpS3lZwgLlwz0FLgHoiW28ZpmBHUDg37cw==}
+    requiresBuild: true
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
@@ -12034,6 +12040,7 @@ packages:
 
   /watchpack-chokidar2/2.0.1:
     resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==}
+    requiresBuild: true
     dependencies:
       chokidar: 2.1.8
     dev: true

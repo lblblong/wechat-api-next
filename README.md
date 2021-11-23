@@ -1,4 +1,4 @@
-# 介绍
+# wechat-api-next
 
 wechat-api-next 是一个类型提示友好，响应友好的微信服务端 API Node.js 封装。
 

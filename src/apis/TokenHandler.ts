@@ -6,6 +6,9 @@ export type SetToken = (token: string) => Promise<any>
 let time: any, token: string | undefined
 
 export class TokenHandler {
+  
+  last?: Promise<string>
+
   /**
    * 获取 AccessToken
    *
@@ -14,21 +17,6 @@ export class TokenHandler {
    * https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html
    *
    */
-  async _fetchToken(this: TokenHandler & WechatBase) {
-    const res = await this.request.get('/cgi-bin/token', {
-      grant_type: 'client_credential',
-      appid: this.appid,
-      secret: this.appsecret,
-    })
-
-    const { access_token } = res.isSuccess()
-
-    await this.setToken(access_token)
-    return access_token
-  }
-
-  last?: Promise<string>
-
   async fetchToken(this: TokenHandler & WechatBase) {
     if (this.last) return this.last
     this.last = new Promise(async (ok, fail) => {
@@ -42,6 +30,20 @@ export class TokenHandler {
       }
     })
     return this.last
+  }
+
+  
+  async _fetchToken(this: TokenHandler & WechatBase) {
+    const res = await this.request.get('/cgi-bin/token', {
+      grant_type: 'client_credential',
+      appid: this.appid,
+      secret: this.appsecret,
+    })
+
+    const { access_token } = res.isSuccess()
+
+    await this.setToken(access_token)
+    return access_token
   }
 
   async getToken(this: TokenHandler & WechatBase) {
