@@ -21,7 +21,7 @@ export class SubmitPages {
    * })
    * ```
    *
-   * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/sec-check/security.msgSecCheck.html
+   * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/search/search.submitPages.html
    *
    */
   async submitPages(options: {
