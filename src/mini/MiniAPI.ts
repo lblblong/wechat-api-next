@@ -2,6 +2,7 @@ import { TicketHandler } from '../apis/TicketHandler'
 import { WechatBase } from '../Base'
 import { applyMixins } from '../utils'
 import { Auth } from './apis/auth'
+import { Search } from './apis/search'
 import { Security } from './apis/security'
 import { SubscribeMessage } from './apis/subscribeMessage'
 import { Wxacode } from './apis/wxacode'
@@ -22,6 +23,9 @@ export class MiniAPI extends WechatBase {
 
   /** 登录 */
   auth = new Auth(this)
+
+  /** 小程序搜索 */
+  search = new Search(this)
 }
 
 export interface MiniAPI extends TicketHandler {}

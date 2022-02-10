@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': ^12.1.4
   '@commitlint/config-conventional': ^12.1.4
   '@commitlint/prompt-cli': ^12.1.4
-  '@libeilong/request': ^0.3.1
+  '@libeilong/request': ^0.7.3
   '@size-limit/preset-small-lib': ^4.11.0
   '@types/node': ^14.14.35
   commitizen: ^4.2.4
@@ -21,7 +21,7 @@ specifiers:
   typescript: ^4.3.2
 
 dependencies:
-  '@libeilong/request': 0.3.1
+  '@libeilong/request': 0.7.3
   dayjs: 1.10.7
 
 devDependencies:
@@ -1575,16 +1575,18 @@ packages:
       chalk: 3.0.0
     dev: true
 
-  /@libeilong/func/0.1.1:
-    resolution: {integrity: sha512-YA6CAi7zfF1gEG2saY9sGlKgctw+m3aBV0WKfKbastw3294FmJZJYwAJCUjkLzvPTYHI1dh5S33/LDzqvy+nUw==}
-    engines: {node: '>=10'}
-    dev: false
-
-  /@libeilong/request/0.3.1:
-    resolution: {integrity: sha512-mAJ4fM7H1vhtXCYU4WnTzjAvDrIODqQbmMl8ep5r9S/pGfSLK58KPdyEuwZjGGnT+pDuiF4Jqtr7CS9lT/pThg==}
+  /@libeilong/func/0.4.0:
+    resolution: {integrity: sha512-q0lReTzOy9cpVnAKFdAxUrTTiM/6pIUrbsTCBu2bmeNB4GJzg8fXelmialeeQ3T8jmwCn0HBAdFPL4RkmW5YEQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@libeilong/func': 0.1.1
+      nanoid: 3.2.0
+    dev: false
+
+  /@libeilong/request/0.7.3:
+    resolution: {integrity: sha512-jP9oOERl8RQuXocI/k6kH+cr0DbjBxKIGTqgKGV9XUup9xCMkEbUITX92GUW5wGFbDbVAooK51BBeZp8VvRtFA==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@libeilong/func': 0.4.0
       axios: 0.24.0
       json-to-ts: 1.7.0
       query-string: 7.0.1
@@ -8042,6 +8044,11 @@ packages:
     hasBin: true
     dev: true
 
+  /nanoid/3.2.0:
+    resolution: {integrity: sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   /nanomatch/1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
     engines: {node: '>=0.10.0'}
@@ -9383,7 +9390,7 @@ packages:
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       colorette: 1.2.2
-      nanoid: 3.1.23
+      nanoid: 3.2.0
       source-map-js: 0.6.2
     dev: true
 
